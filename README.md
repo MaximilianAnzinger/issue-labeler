@@ -71,7 +71,7 @@ jobs:
   triage:
     runs-on: ubuntu-latest
     steps:
-    - uses: github/issue-labeler@v1.0 # Use the latest version
+    - uses: MaximilianAnzinger/issue-labeler@1.0.0 # Use the latest version
       with:
         configuration-path: .github/issue-labeler.yml
         repo-token: ${{ github.token }}
