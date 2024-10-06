@@ -1,3 +1,5 @@
+import {debug} from '@actions/core';
+
 export function containsKeyword(
   contentToCheck: string,
   keyword: string,
@@ -12,6 +14,7 @@ export function containsKeyword(
       : new RegExp(keyword, 'i');
     return regex.test(contentToCheck);
   } catch (e) {
+    debug(`Error while checking for keyword: ${e}`);
     return false;
   }
 }
