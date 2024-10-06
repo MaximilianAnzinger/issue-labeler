@@ -73,7 +73,9 @@ function parseMatchingStrategy(
   rawConfig: any,
   label: string
 ): MatchingStrategy {
-  const strategyEntry = rawConfig[label].find((entry: any) => entry.matchingStrategy !== undefined);
+  const strategyEntry = rawConfig[label].find(
+    (entry: any) => entry.matchingStrategy !== undefined
+  );
   if (!strategyEntry) {
     return MatchingStrategy.ANY;
   }
@@ -90,6 +92,8 @@ function parseMatchingStrategy(
 }
 
 function parseCaseSensitivity(rawConfig: any, label: string): boolean {
-  const caseSensitiveEntry = rawConfig[label].find((entry: any) => entry.caseSensitive !== undefined);
+  const caseSensitiveEntry = rawConfig[label].find(
+    (entry: any) => entry.caseSensitive !== undefined
+  );
   return caseSensitiveEntry ? caseSensitiveEntry.caseSensitive : true;
 }

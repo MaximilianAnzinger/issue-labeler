@@ -1,5 +1,5 @@
 import {LabelerConfig} from '../labeler-config';
-import {labelMatches} from "./label-matches";
+import {labelMatches} from './label-matches';
 
 export function getMatchingLabels(
   config: LabelerConfig,

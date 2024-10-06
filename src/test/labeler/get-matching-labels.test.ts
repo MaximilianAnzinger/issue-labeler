@@ -4,7 +4,7 @@ import {
   MatchingStrategy
 } from '../../main/labeler-config';
 import * as labelMatchesFile from '../../main/labeler/label-matches';
-import {getMatchingLabels} from "../../main/labeler/get-matching-labels";
+import {getMatchingLabels} from '../../main/labeler/get-matching-labels';
 
 describe('labeler', () => {
   let labelMatchesStub: jest.SpyInstance;
