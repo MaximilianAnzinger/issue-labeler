@@ -4,7 +4,7 @@
     "description": "Labels issues by keywords in the title or body.",
     "main": "lib/index.js",
     "scripts": {
-        "build": "tsc && ncc build lib/main.js",
+        "build": "tsc && ncc build lib/main/main.js",
         "format": "prettier --no-error-on-unmatched-pattern --config ./.prettierrc.js --write \"**/*.{ts,yml,yaml}\"",
         "format-check": "prettier --no-error-on-unmatched-pattern --config ./.prettierrc.js --check \"**/*.{ts,yml,yaml}\"",
         "lint": "eslint --config ./.eslintrc.js \"**/*.ts\"",
