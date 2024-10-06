@@ -1,4 +1,4 @@
-name: Issue Labeler
+name: Github Issue Labeler
 description: Automatically labels issues based on keywords in issue titles or bodies.
 
 inputs:
