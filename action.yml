@@ -1,0 +1,35 @@
+name: Github Issue Labeler
+description: Automatically labels issues based on keywords in issue titles or bodies.
+
+inputs:
+  repo-token:
+    description: 'The GITHUB_TOKEN secret'
+    required: false
+    default: '${{ github.token }}'
+
+  configuration-path:
+    description: "The path to the label configuration file. If the file doesn't exist at the specified path on the runner, action will read from the source repository via the Github API."
+    required: true
+
+  include-title:
+    description: 'Search for keywords in the title'
+    required: false
+    default: "1"
+
+  include-body:
+    description: 'Search for keywords in the body'
+    required: false
+    default: "1"
+
+  issue-number:
+    description: 'The number of the issue to label'
+    required: false
+    default: ${{ github.event.issue.number }}
+
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
+  
+branding:
+  icon: 'activity'
+  color: 'blue'
