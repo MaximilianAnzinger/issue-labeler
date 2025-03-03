@@ -1,6 +1,6 @@
 {
     "name": "issue-labeler",
-    "version": "1.1.0",
+    "version": "1.0.2",
     "description": "Labels issues by keywords in the title or body.",
     "main": "lib/index.js",
     "scripts": {
